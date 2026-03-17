@@ -4,255 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muyeed Ahmed</title>
-
-<style>
-  :root{
-    --text:#111827;
-    --muted:#6b7280;
-    --line:#e5e7eb;
-    --bg:#ffffff;
-  }
-
-  *{ box-sizing:border-box; }
-
-  html{ scroll-behavior:smooth; }
-
-  body{
-    margin:0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    color:var(--text);
-    background:var(--bg);
-  }
-
-  .wrap{
-    max-width:1050px;
-    margin:0 auto;
-    padding: 32px 24px 80px;
-  }
-
-  /* ---------- TOP MENU ---------- */
-  .nav{
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(255,255,255,.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-
-  .navinner{
-    max-width:1050px;
-    margin:0 auto;
-    padding: 14px 24px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:18px;
-  }
-
-  .brand{
-    font-weight:700;
-    letter-spacing:.2px;
-    white-space:nowrap;
-  }
-
-  .menu{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    justify-content:flex-end;
-  }
-
-  .menu a{
-    color:var(--muted);
-    text-decoration:none;
-    font-size:13px;
-  }
-  .menu a:hover{ color:var(--text); text-decoration:underline; }
-
-  @media (max-width: 760px){
-    .navinner{ align-items:flex-start; flex-direction:column; }
-    .menu{ justify-content:flex-start; }
-  }
-
-  /* ---------- HEADER ---------- */
-  .top{
-    text-align:center;
-    padding-top: 26px;
-    margin-bottom: 46px;
-  }
-
-  .top h1{
-    margin:0;
-    font-size:46px;
-    font-weight:700;
-  }
-
-  .top p{
-    margin:10px 0 0;
-    color:var(--muted);
-    font-size:16px;
-  }
-
-  /* ---------- PROFILE GRID ---------- */
-  .profile{
-    display:grid;
-    grid-template-columns: 1fr 320px 1fr;
-    gap:44px;
-    align-items:start;
-    margin-bottom: 56px;
-  }
-
-  h2{
-    font-size:18px;
-    margin:0 0 14px;
-  }
-
-  .about p{
-    font-size:14px;
-    line-height:1.75;
-    color:var(--muted);
-    max-width:360px;
-    margin:0;
-  }
-
-  .photo{
-    width:210px;
-    height:210px;
-    border-radius:999px;
-    overflow:hidden;
-    border:10px solid #f3f4f6;
-    background:#f3f4f6;
-    margin:0 auto;
-  }
-  .photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-
-  .contacts{
-    justify-self:end;
-    min-width:320px;
-    font-size:14px;
-  }
-
-  .contacts .block{
-    margin-bottom:14px;
-    color:var(--muted);
-  }
-  .contacts strong{ color:var(--text); }
-  
-  .contacts .block{
-    display: flex;
-    align-items: flex-start;
-    }
-
-    .contacts .block strong{
-    display: inline-block;
-    width: 80px;          /* controls spacing after "Email:" / "Location:" */
-    }
-
-    .contacts .block .value{
-    color: var(--muted);
-    line-height: 1.6;
-}
-
-  .links{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-size:14px;
-    }
-  .links a{
-    color:var(--muted);
-    text-decoration:none;
-  }
-  .links a:hover{
-    color:var(--text);
-    text-decoration:underline;
-  }
-
-  @media (max-width:900px){
-    .profile{
-      grid-template-columns:1fr;
-      text-align:center;
-    }
-    .contacts{
-      justify-self:center;
-      text-align:left;
-      min-width: unset;
-      max-width: 420px;
-      width: 100%;
-    }
-    .about p{ max-width:520px; margin:0 auto; }
-  }
-
-  /* ---------- SECTIONS (STACKED) ---------- */
-  section.block{
-    padding-top: 30px;           /* for anchor offset */
-    scroll-margin-top: 86px;     /* so sticky nav doesn't cover heading */
-    border-top: 1px solid var(--line);
-    margin-top: 44px;
-  }
-
-  section.block:first-of-type{
-    border-top: none;
-    margin-top: 0;
-  }
-
-  .block h2{
-    font-size:22px;
-    margin:0 0 18px;
-  }
-
-  .item{
-    margin-bottom: 22px;
-    max-width: 1000px;
-  }
-
-  .item h3{
-    margin:0;
-    font-size:16px;
-    font-weight:700;
-  }
-
-  .meta{
-    margin:6px 0 10px;
-    font-size:13px;
-    color:var(--muted);
-  }
-
-  .item p, .item ul{
-    font-size:14px;
-    color:var(--muted);
-    line-height:1.7;
-    margin:0;
-  }
-
-  .item ul{
-    padding-left:18px;
-    margin-top:8px;
-  }
-
-  .item li{
-    margin-bottom:6px;
-  }
-
-    a{
-    color: inherit;
-    text-decoration: none;
-    }
-
-    a:hover{
-    text-decoration: underline;
-    }
-
-    .sub a{
-    color: #179826; 
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -262,11 +14,11 @@
   <div class="navinner">
     <div class="brand">Muyeed Ahmed</div>
     <nav class="menu" aria-label="Site menu">
-      <a href="#about">About</a>
-      <a href="#contacts">Contacts</a>
-      <a href="#experience">Experience</a>
+      <!-- <a href="#about">About</a>
       <a href="#education">Education</a>
-      <a href="#publications">Publications</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#experience">Experience</a> -->
+      <a href="research.html">Research</a>
     </nav>
   </div>
 </div>
@@ -287,218 +39,234 @@
       <h2>About me</h2>
       <div class="about">
         <p>
-          I am currently a last-year Ph.D. student at the New Jersey
-            Institute of Technology, where I also serve as a Research
-            Assistant under the supervision of a professor Iulian Neamtiu. 
-            My research primarily focuses on program analysis, incorporating
-            elements of unsupervised learning. I anticipate completing
-            my studies by the summer of 2026.
+          I am a last-year Ph.D. candidate in Computer Science at the New Jersey Institute of Technology,
+          advised by Dr. Iulian Neamtiu. My research focuses on program analysis and verification, with
+          connections to machine learning systems. I anticipate completing my Ph.D. by Summer 2026.
         </p>
+
+        <div class="tags" aria-label="Research interests">
+          <span class="tag">Programming Languages</span>
+          <span class="tag">Verification</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">AI</span>
+        </div>
+      </div>
+
+      <!-- Education moved under About -->
+      <div style="margin-top:24px;">
+        <h2 id="education">Education</h2>
+
+        <div class="item" style="margin-bottom:16px;">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/njit.png" alt="NJIT logo">
+            <h3 style="margin:0;">Ph.D. in Computer Science</h3>
+          </div>
+          <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
+          <p>
+            Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a><br>
+            Thesis: Verifying and Validating Implementations of Unsupervised Learning Algorithms
+            GPA: 4.0/4.0 (PhD coursework)<br>
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom:0;">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
+            <h3 style="margin:0;">B.S. in Computer Science and Engineering</h3>
+          </div>
+          <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
+          <p>GPA: 3.74/4.0 (Magna Cum Laude)</p>
+        </div>
       </div>
     </section>
 
     <div aria-label="Profile photo">
       <div class="photo">
         <!-- Replace with your image file -->
-        <img src="M2.png" alt="Muyeed Ahmed">
+        <img src="Images/M.png" alt="Muyeed Ahmed">
       </div>
     </div>
 
-    <section id="contacts" class="contacts" aria-label="Contacts">
-      <h2>Contacts</h2>
+    <div class="contacts-col">
+      <section id="contacts" class="contacts" aria-label="Contacts">
+        <h2>Contacts</h2>
+
         <div class="block">
-        <strong>Email</strong>
-        <span class="value">
+          <strong>Email</strong>
+          <span class="value">
             ma234@njit.edu<br>
             akib100095@gmail.com
-        </span>
+          </span>
         </div>
-        
+
         <div class="block">
-        <strong>Location</strong>
-        <span class="value">
-            Harrison, New Jersey, USA
-        </span>
+          <strong>Location</strong>
+          <span class="value">Harrison, New Jersey, USA</span>
         </div>
-        
+
         <div class="links">
-        <a href="https://github.com/MuyeedAhmed" target="_blank">GitHub</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/muyeed-ahmed" target="_blank">LinkedIn</a>
-        <span>·</span>
-        <a href="https://scholar.google.com/citations?user=YBPPO0gAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          <a href="https://github.com/MuyeedAhmed" target="_blank" rel="noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/muyeed-ahmed" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="https://scholar.google.com/citations?user=YBPPO0gAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
         </div>
-    </section>
+      </section>
+
+      <!-- Research -->
+      <section id="research-highlights" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
+        <h2 style="font-size:18px; margin:0 0 14px;">Research</h2>
+        
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-bottom:10px;">Notable Projects</h3>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a></strong> — Detecting nondeterminism in ML.
+          </p>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">Ocelot</a></strong> — SMT-based verification of ML implementations.
+          </p>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/Constraint-guided-Generalization" target="_blank" rel="noreferrer">Constraint-guided Generalization</a></strong> — MILP-based post-hoc NN generalization.
+          </p>
+        </div>
+
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-top:20px; margin-bottom:10px;">Notable Publications</h3>
+        <div class="item" style="margin-bottom:16px;">
+          <h3 style="font-size:14px;">Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving</h3>
+          <div class="meta" style="margin:4px 0;">ICSE 2026</div>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <h3 style="font-size:14px;">Can LLMs be Effective Code Contributors? A Study on Open-source Projects</h3>
+          <div class="meta" style="margin:4px 0;">EASE 2026</div>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <h3 style="font-size:14px;">ACE: Algorithm-independent Acceleration and Parallelization of Clustering Implementations</h3>
+          <div class="meta" style="margin:4px 0;">PPAM 2024</div>
+        </div>
+        <div class="item">
+            <a href="research.html" style="font-size:13px; font-weight:600;">View all research →</a>
+        </div>
+      </section>
+    </div>
 
   </div>
 
-  <!-- Experience -->
+  <!-- Experience & Skills -->
   <section id="experience" class="block">
-    <h2>Experience</h2>
+    <div class="twocol">
+      <div>
+        <h2>Experience</h2>
 
-    <div class="item">
-      <h3>Graduate Research Assistant — New Jersey Institute of Technology</h3>
-      <div class="meta">Jun. 2022 – Present</div>
-      <div class="meta">Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank">Dr. Iulian Neamtiu</a></div>
-      <ul>
-        <li>Built a tool to detect sources of nondeterminism in unsupervised learning algorithm implementations <br>
-            <span class="sub">(<a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a>)</span>
-        </li>
-        <li>Verified sources of nondeterminism and inconsistency in unsupervised learning implementations using SMT solvers<br>
-            <span class="sub">(<a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">Ocelot</a>)</span>
-        </li>
-        <li>Developed MILP-based post-hoc constraints to control prediction flips and confidence in neural network models<br>
-            <span class="sub">(<a href="https://github.com/MuyeedAhmed/Constraint-guided-Generalization" target="_blank" rel="noreferrer">Constraint-guided Generalization</a>)</span>
-        </li>
-        <li>Developed a framework to verify correctness of LLM generate code<br>
-            <span class="sub">(<a href="" target="_blank" rel="noreferrer">LLM-Test-Framework</a>)</span>
-        </li>
-        <li>Developed a tool to reduce nondeterminism and inconsistency in anomaly detection algorithm implementations<br>
-            <span class="sub">(<a href="https://github.com/MuyeedAhmed/DeAnomalyzer" target="_blank" rel="noreferrer">DeAnomalyzer</a>)</span>
-        </li>
-        <li>Built a tool to parallelize clustering algorithm implementations<br>
-            <span class="sub">(<a href="https://github.com/MuyeedAhmed/ACE" target="_blank" rel="noreferrer">ACE</a>)</span>
-        </li>
-      </ul>
-    </div>
+        <!-- NJIT group -->
+        <div class="item">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/NJIT.png" alt="NJIT logo">
+            <h3 style="margin:0;">New Jersey Institute of Technology</h3>
+          </div>
 
-    <div class="item">
-      <h3>Graduate Teaching Assistant — New Jersey Institute of Technology</h3>
-      <div class="meta">Jan. 2021 – May. 2022</div>
-      <div class="meta">Courses: CS370 Artificial Intelligence | DS644 Big Data | CS673 Software Design and Production Methodology</div>
-      <ul>
-        <li>Conducted lab classes, evaluated exams and assignments, and developed project tutorials.</li>
-      </ul>
-    </div>
+          <ul class="role">
+            <li>
+              <span class="title">Graduate Research Assistant</span>
+              <span class="when">· Jun. 2022 – Present</span>
+              <div class="meta" style="margin:6px 0 0;">
+                Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a>
+              </div>
+              <p style="margin-top:8px;">
+                Built and evaluated tools to detect, diagnose, and reduce nondeterminism/inconsistency in
+                unsupervised learning implementations. Developed verification workflows using SMT solving,
+                and explored constraint-based methods to control neural network prediction behavior.
+              </p>
+            </li>
 
-    <div class="item">
-      <h3>Software Engineer I — Samsung R&D Institute Bangladesh</h3>
-      <div class="meta">Mar. 2019 – Dec. 2020 · Dhaka, Bangladesh</div>
-      <ul>
-        <li>Performed quality assurance for Tizen and iOS applications.</li>
-        <li>Developed automated test scripts for iOS applications.</li>
-        <li>Conducted framework testing for IoT devices.</li>
-      </ul>
-    </div>
-    <div class="item">
-      <h3>Intern — Samsung R&D Institute Bangladesh</h3>
-      <div class="meta">Aug. 2018 – Feb. 2019 · Dhaka, Bangladesh</div>
-    </div>
-    <div class="item">
-      <h3>Lab Instructor — North South University</h3>
-      <div class="meta">Jan. 2018 – Dec. 2018</div>
-      <div class="meta">Courses: Database Management Systems | Computer Architecture | Web Development</div>
-      <ul>
-        <li>Conducted lab classes, evaluated exams and assignments, and developed project tutorials.</li>
-      </ul>
+            <li>
+              <span class="title">Graduate Teaching Assistant</span>
+              <span class="when">· Jan. 2021 – May. 2022</span>
+              <div class="meta" style="margin:6px 0 0;">
+                Courses: CS370 Artificial Intelligence | DS644 Big Data | CS673 Software Design and Production Methodology
+              </div>
+              <p style="margin-top:8px;">
+                Conducted lab sessions, evaluated exams/assignments, and prepared project tutorials.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Samsung group -->
+        <div class="item">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/Samsung.png" alt="Samsung logo">
+            <h3 style="margin:0;">Samsung R&amp;D Institute Bangladesh</h3>
+          </div>
+
+          <ul class="role">
+            <li>
+              <span class="title">Software Engineer I</span>
+              <span class="when">· Mar. 2019 – Dec. 2020</span>
+              <div class="meta">Dhaka, Bangladesh</div>
+              <ul style="margin-top:8px;">
+                <li>Performed QA for Tizen and iOS applications.</li>
+                <li>Developed automated test scripts for iOS applications.</li>
+                <li>Conducted framework testing for IoT devices.</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="title">Intern</span>
+              <span class="when">· Aug. 2018 – Feb. 2019</span>
+              <div class="meta">Dhaka, Bangladesh</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NSU -->
+        <div class="item">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
+            <h3 style="margin:0;">North South University</h3>
+          </div>
+          <ul class="role">
+            <li>
+              <span class="title">Lab Instructor</span>
+              <span class="when">· Jan. 2018 – Dec. 2018</span>
+              <div class="meta">Courses: Database Management Systems | Computer Architecture | Web Development</div>
+              <p style="margin-top:8px;">
+                Conducted lab classes, evaluated exams and assignments, and developed project tutorials.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills Sidebar -->
+      <aside class="sidebar">
+        <h2 style="font-size:18px; margin:0 0 10px;">Expertise &amp; Skills</h2>
+
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Languages</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">C, C++, Java, Python, OCaml, R, MATLAB, SQL</p>
+        </div>
+
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Optimization / Formal Methods</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">MILP, Z3 Solver (SMT)</p>
+        </div>
+
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">ML</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">TensorFlow</p>
+        </div>
+
+        <div class="item" style="margin-bottom:0;">
+          <h3 style="font-size:14px;">Tools</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Git</p>
+        </div>
+      </aside>
     </div>
   </section>
-
-  <!-- Education -->
-  <section id="education" class="block">
-    <h2>Education</h2>
-
-    <div class="item">
-      <h3>Ph.D. in Computer Science</h3>
-      <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
-      <p>
-        GPA: 4.00<br>
-        Thesis: Verifying and Validating Implementations of Unsupervised Learning Algorithms
-      </p>
-    </div>
-    <div class="item">
-      <h3>B.S. in Computer Science and Engineering</h3>
-      <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
-      <p>
-        GPA: 3.74<br>
-      </p>
-    </div>
-  </section>
-
-  <!-- Publications -->
-  <section id="publications" class="block">
-  <h2>Publications</h2>
-
-  <div class="item">
-    <h3> Controlling Neural Network Generalization via Constraint-Guided Weight Transformations</h3>
-    <div class="meta"><strong>M Ahmed</strong>, R Lee, I Koutis, I Neamtiu</div>
-    <div class="meta">Submitted</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://conf.researchr.org/details/icse-2026/icse-2026-research-track/316/Checking-Unsupervised-Learning-for-Nondeterminism-and-Inconsistency-via-SMT-Solving" target="_blank"> Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">ICSE 2026 (Accepted)</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://web.njit.edu/~ineamtiu/pubs/ppam24ahmed.pdf" target="_blank">ACE: Algorithm-independent Acceleration and Parallelization of Clustering Implementations</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">PPAM 2024</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://web.njit.edu/~ineamtiu/pubs/aitest24ahmed.pdf" target="_blank"> Quantifying the Vulnerability of Anomaly Detection Implementations to Nondeterminism-based Attacks</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">AITest 2024</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://web.njit.edu/~ineamtiu/pubs/eh24almutawa2.pdf" target="_blank">Test Amplification for Medical Apps Implementing Linearly-approximatable Functions</a></h3>
-    <div class="meta">I Almutawa, <strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">e-Health 2024</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://par.nsf.gov/servlets/purl/10511725" target="_blank"> Pluggable Type Inference for Free</a></h3>
-    <div class="meta">M Kellogg, D Daskiewicz, LND Nguyen, <strong>M Ahmed</strong>, MD Ernst</div>
-    <div class="meta">ASE 2023</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://web.njit.edu/~ineamtiu/pubs/aitest23ahmed.pdf" target="_blank">DeAnomalyzer: Improving Determinism and Consistency in Anomaly Detection Implementations</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">AITest 2023</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://web.njit.edu/~ineamtiu/pubs/aitest22ahmed.pdf" target="_blank">Anomalous Anomaly Detection</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
-    <div class="meta">AITest 2022</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://ieeexplore.ieee.org/abstract/document/8301695" target="_blank"> Movie Recommendation System Using Clustering and Pattern Recognition Network</a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, MT Imtiaz, R Khan</div>
-    <div class="meta">CCWC 2018</div>
-  </div>
-
-  <div class="item">
-    <h3> 
-        <a href="https://d1wqtxts1xzle7.cloudfront.net/98981295/IJKEDM.2018.09552420230222-1-5qslbk-libre.pdf?1677063223=&response-content-disposition=inline%3B+filename%3DClustering_and_Association_Rule_Mining_b.pdf&Expires=1770279856&Signature=OSVRrxdu5BXr9emR2cCUn9bSGzIoajhWIXpEFwzB8WD-0F0iMso83beVT8Xdjh8o9aQmRyjQvOy2Hevnq~g8mZWqm2ug~-JqLLatmCnMuhpc2MNLUPLmgiOqkXU4372RpCWRRoWQk2AnuhUHjbSCY8Z0CGyPOUheuYyK-I~BH7yDb41~ZQ3w9qyArd16lL3YXgOoeX1~G-atZCEzIT-c7uVI5Prp1UawolNxcOut8gkT8VUXwni3J7PVWTuXuul8zrn2c5Y5FJyJumswlFwaCMdNYE1rnbLjfStRQeZEMxLmSMCa4xI9BTRhmKW7hLTR4tG~CSVVw6phPh43ZuXI2g__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank"> 
-            Clustering and Association Rule Mining-based Traffic Analysis and Prediction of Dhaka
-        </a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, MT Imtiaz, R Khan, RM Rahman</div>
-    <div class="meta">Inderscience IJKEDM 2018</div>
-  </div>
-
-  <div class="item">
-    <h3> <a href="https://www.researchgate.net/profile/Anirudha-Paul-2/publication/319561168_Bangla_News_Summarization/links/65c4798e1e1ec12eff7be992/Bangla-News-Summarization.pdf" target="_blank"> Bangla News Summarization</a></h3>
-    <div class="meta">A Paul, MT Imtiaz, AH Latif, <strong>M Ahmed</strong>, FA Adnan, R Khan, I Kadery, RM Rahman</div>
-    <div class="meta">ICCCI 2017</div>
-  </div>
-
-  <div class="item">
-    <h3>
-        <a href="https://www.researchgate.net/profile/Anirudha-Paul-2/publication/326066181_TV_series_recommendation_using_fuzzy_inference_system_K-Means_clustering_and_adaptive_neuro_fuzzy_inference_system/links/64d3f4a6c80b930269fb844c/TV-series-recommendation-using-fuzzy-inference-system-K-Means-clustering-and-adaptive-neuro-fuzzy-inference-system.pdf" target="_blank"> 
-            TV Series Recommendation Using Fuzzy Inference System, K-Means Clustering and Adaptive Neuro-Fuzzy Inference System
-        </a></h3>
-    <div class="meta"><strong>M Ahmed</strong>, A Paul, MT Imtiaz, MZ Hassan, S Ashraf, RM Rahman</div>
-    <div class="meta">FSKD 2017</div>
-  </div>
-
-</section>
-
 
 </main>
 </body>

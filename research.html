@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muyeed Ahmed · Research</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Small page-specific tweaks */
+  .lead{ margin:0 0 22px; color:var(--muted); }
+  .pageh1{ margin: 10px 0 6px; font-size: 34px; }
+  .simple-section{
+    border-top:1px solid var(--line);
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+  .simple-section:first-of-type{ border-top:none; margin-top: 0; padding-top:0; }
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="navinner">
+    <div class="brand">Muyeed Ahmed</div>
+    <nav class="menu" aria-label="Site menu">
+      <a href="index.html">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <h1 class="pageh1">Research</h1>
+  <p class="lead">Projects and selected publications.</p>
+
+  <section id="projects" class="simple-section" aria-label="Projects">
+    <h2 style="margin:0 0 14px;">Selected Projects</h2>
+    <p style="font-size:14px; color:var(--muted); margin-bottom:18px;">Research tools and open-source implementations for program analysis and machine learning.</p>
+    <ul>
+      <li style="margin-bottom:12px;"><strong><a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a></strong> — detecting sources of nondeterminism in unsupervised learning implementations</li>
+      <li style="margin-bottom:12px;"><strong><a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">Ocelot</a></strong> — verifying nondeterminism/inconsistency via SMT solving</li>
+      <li style="margin-bottom:12px;"><strong><a href="https://github.com/MuyeedAhmed/Constraint-guided-Generalization" target="_blank" rel="noreferrer">Constraint-guided Generalization</a></strong> — MILP-based post-hoc constraints for prediction flips/confidence</li>
+      <li style="margin-bottom:12px;"><strong><a href="https://github.com/MuyeedAhmed/DeAnomalyzer" target="_blank" rel="noreferrer">DeAnomalyzer</a></strong> — reducing nondeterminism/inconsistency in anomaly detection</li>
+      <li style="margin-bottom:12px;"><strong><a href="https://github.com/MuyeedAhmed/ACE" target="_blank" rel="noreferrer">ACE</a></strong> — parallelizing clustering implementations</li>
+    </ul>
+  </section>
+
+  <section id="publications" class="simple-section" aria-label="Publications">
+    <h2 style="margin:0 0 14px;">Publications</h2>
+
+    <div class="item">
+      <h3>Controlling Neural Network Generalization via Constraint-Guided Weight Transformations</h3>
+      <div class="meta"><strong>M Ahmed</strong>, R Lee, I Koutis, I Neamtiu</div>
+      <div class="meta">Submitted</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://conf.researchr.org/details/icse-2026/icse-2026-research-track/316/Checking-Unsupervised-Learning-for-Nondeterminism-and-Inconsistency-via-SMT-Solving" target="_blank" rel="noreferrer">
+          Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">ICSE 2026 (Accepted)</div>
+    </div>
+
+    <div class="item">
+      <h3>
+          Can LLMs be Effective Code Contributors? A Study on Open-source Projects
+      </h3>
+      <div class="meta">C Chong, <strong>M Ahmed</strong>, Z Yao, I Neamtiu</div>
+      <div class="meta">EASE 2026 (Accepted)</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://web.njit.edu/~ineamtiu/pubs/ppam24ahmed.pdf" target="_blank" rel="noreferrer">
+          ACE: Algorithm-independent Acceleration and Parallelization of Clustering Implementations
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">PPAM 2024</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://web.njit.edu/~ineamtiu/pubs/aitest24ahmed.pdf" target="_blank" rel="noreferrer">
+          Quantifying the Vulnerability of Anomaly Detection Implementations to Nondeterminism-based Attacks
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">AITest 2024</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://web.njit.edu/~ineamtiu/pubs/eh24almutawa2.pdf" target="_blank" rel="noreferrer">
+          Test Amplification for Medical Apps Implementing Linearly-approximatable Functions
+        </a>
+      </h3>
+      <div class="meta">I Almutawa, <strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">e-Health 2024</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://par.nsf.gov/servlets/purl/10511725" target="_blank" rel="noreferrer">
+          Pluggable Type Inference for Free
+        </a>
+      </h3>
+      <div class="meta">M Kellogg, D Daskiewicz, LND Nguyen, <strong>M Ahmed</strong>, MD Ernst</div>
+      <div class="meta">ASE 2023</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://web.njit.edu/~ineamtiu/pubs/aitest23ahmed.pdf" target="_blank" rel="noreferrer">
+          DeAnomalyzer: Improving Determinism and Consistency in Anomaly Detection Implementations
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">AITest 2023</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://web.njit.edu/~ineamtiu/pubs/aitest22ahmed.pdf" target="_blank" rel="noreferrer">
+          Anomalous Anomaly Detection
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, I Neamtiu</div>
+      <div class="meta">AITest 2022</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://ieeexplore.ieee.org/abstract/document/8301695" target="_blank" rel="noreferrer">
+          Movie Recommendation System Using Clustering and Pattern Recognition Network
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, MT Imtiaz, R Khan</div>
+      <div class="meta">CCWC 2018</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://d1wqtxts1xzle7.cloudfront.net/98981295/IJKEDM.2018.09552420230222-1-5qslbk-libre.pdf" target="_blank" rel="noreferrer">
+          Clustering and Association Rule Mining-based Traffic Analysis and Prediction of Dhaka
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, MT Imtiaz, R Khan, RM Rahman</div>
+      <div class="meta">Inderscience IJKEDM 2018</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://www.researchgate.net/profile/Anirudha-Paul-2/publication/319561168_Bangla_News_Summarization/links/65c4798e1e1ec12eff7be992/Bangla-News-Summarization.pdf" target="_blank" rel="noreferrer">
+          Bangla News Summarization
+        </a>
+      </h3>
+      <div class="meta">A Paul, MT Imtiaz, AH Latif, <strong>M Ahmed</strong>, FA Adnan, R Khan, I Kadery, RM Rahman</div>
+      <div class="meta">ICCCI 2017</div>
+    </div>
+
+    <div class="item">
+      <h3>
+        <a href="https://www.researchgate.net/profile/Anirudha-Paul-2/publication/326066181_TV_series_recommendation_using_fuzzy_inference_system_K-Means_clustering_and_adaptive_neuro_fuzzy_inference_system/links/64d3f4a6c80b930269fb844c/TV-series-recommendation-using-fuzzy-inference-system-K-Means-clustering-and-adaptive-neuro-fuzzy-inference-system.pdf" target="_blank" rel="noreferrer">
+          TV Series Recommendation Using Fuzzy Inference System, K-Means Clustering and Adaptive Neuro-Fuzzy Inference System
+        </a>
+      </h3>
+      <div class="meta"><strong>M Ahmed</strong>, A Paul, MT Imtiaz, MZ Hassan, S Ashraf, RM Rahman</div>
+      <div class="meta">FSKD 2017</div>
+    </div>
+
+  </section>
+
+</main>
+</body>
+</html>
