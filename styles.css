@@ -241,6 +241,26 @@ section.block:first-of-type{
 
 .item li{ margin-bottom:6px; }
 
+/* ---------- PUBLICATIONS ---------- */
+.pub-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+  align-items: baseline;
+}
+.pub-meta {
+  flex: 0 0 80px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.pub-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 /* ---------- ORG / ROLES + LOGOS ---------- */
 .orgrow{
   display:flex;
