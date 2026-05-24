@@ -90,13 +90,71 @@ a:hover{ text-decoration:underline; }
   font-size:16px;
 }
 
-/* ---------- PROFILE GRID ---------- */
-.profile{
-  display:grid;
+/* ---------- MAIN LAYOUT GRID ---------- */
+.main-grid {
+  display: grid;
   grid-template-columns: 1fr 260px 1fr;
-  gap:34px;
-  align-items:start;
-  margin-bottom: 44px;
+  gap: 34px;
+  align-items: start;
+}
+
+.about-edu-col {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.photo-col {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.sidebar-col {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.exp-col {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+@media (max-width: 1100px) {
+  .main-grid {
+    grid-template-columns: 1fr 260px;
+  }
+  .sidebar-col {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .exp-col {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .photo-col {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-edu-col, .photo-col, .sidebar-col, .exp-col {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .photo-col {
+    order: -1;
+    padding-top: 0;
+  }
+  .sidebar-col {
+    text-align: left;
+  }
 }
 
 h2{
@@ -144,11 +202,6 @@ h2{
   display:block;
 }
 
-.contacts-col{
-  justify-self:end;
-  min-width:320px;
-}
-
 .contacts{
   font-size:14px;
 }
@@ -180,10 +233,6 @@ h2{
 .links a{ color:#0284c7; }
 
 @media (max-width:900px){
-  .profile{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
   .contacts{
     justify-self:center;
     text-align:left;
@@ -195,10 +244,10 @@ h2{
 
 /* ---------- SECTIONS ---------- */
 section.block{
-  padding-top: 30px;           /* for anchor offset */
-  scroll-margin-top: 86px;     /* so sticky nav doesn't cover heading */
+  padding-top: 10px;
+  scroll-margin-top: 86px;
   border-top: 1px solid var(--line);
-  margin-top: 36px;
+  margin-top: 8px;            /* significantly reduced */
 }
 
 section.block:first-of-type{
@@ -208,11 +257,11 @@ section.block:first-of-type{
 
 .block h2{
   font-size:22px;
-  margin:0 0 18px;
+  margin:0 0 12px;           /* reduced */
 }
 
 .item{
-  margin-bottom: 22px;
+  margin-bottom: 12px;       /* reduced from 22px */
 }
 
 .item h3{
@@ -291,24 +340,7 @@ section.block:first-of-type{
   margin-left: 6px;
 }
 
-/* ---------- Experience + Right Sidebar ---------- */
-.twocol{
-  display:grid;
-  grid-template-columns: 1fr 550px;
-  gap: 34px;
-  align-items:start;
-}
-.sidebar{
-  border-left: 1px solid var(--line);
-  padding-left: 18px;
-}
-
+/* ---------- Experience Layout ---------- */
 @media (max-width:900px){
-  .twocol{ grid-template-columns:1fr; }
-  .sidebar{
-    border-left:none;
-    padding-left:0;
-    border-top:1px solid var(--line);
-    padding-top:18px;
-  }
+  /* Existing mobile styles ... */
 }

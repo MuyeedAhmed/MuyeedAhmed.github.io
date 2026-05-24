@@ -32,79 +32,74 @@
     <p>Computer Science · New Jersey Institute of Technology</p>
   </header>
 
-  <!-- About / Photo / Contacts -->
-  <div class="profile">
-
-    <section id="about" aria-label="About">
-      <h2>About me</h2>
-      <div class="about">
-        <p>
-          I'm a <strong>Ph.D. Candidate in Computer Science</strong> (Expected Aug 2026) specializing in <strong>Program Analysis</strong> and <strong>Formal
-          Verification</strong>. Developed tools to detect sources of <strong>nondeterminism</strong> and <strong>inconsistency</strong> in unsupervised learning using
-          <strong>SMT solvers</strong>, and developed methods to control <strong>Neural Network</strong> generalization via <strong>MILP</strong>. Research published in
-          <strong>ICSE</strong> and <strong>ASE</strong> with additional professional software engineering experience at <strong>Samsung R&D Institute</strong>.
-        </p>
-
-        <div class="tags" aria-label="Research interests">
-          <span class="tag">Programming Languages</span>
-          <span class="tag">Verification</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">AI</span>
-        </div>
-      </div>
-
-      <!-- Education moved under About -->
-      <div style="margin-top:24px;">
-        <h2 id="education">Education</h2>
-
-        <div class="item" style="margin-bottom:16px;">
-          <div class="orgrow">
-            <img class="orglogo" src="Images/NJIT.png" alt="NJIT logo">
-            <h3 style="margin:0;">Ph.D. in Computer Science</h3>
-          </div>
-          <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
+  <div class="main-grid">
+    
+    <!-- Column 1: About & Education -->
+    <div class="about-edu-col">
+      <section id="about" aria-label="About">
+        <h2>About me</h2>
+        <div class="about">
           <p>
-            Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a><br>
-            Dissertation: Verifying and Validating Implementations of Unsupervised Learning Algorithms
-            GPA: 4.0/4.0 (PhD coursework)<br>
+            I'm a <strong>Ph.D. Candidate in Computer Science</strong> (Expected Aug 2026) specializing in <strong>Program Analysis</strong> and <strong>Formal
+            Verification</strong>. Developed tools to detect sources of <strong>nondeterminism</strong> and <strong>inconsistency</strong> in unsupervised learning using
+            <strong>SMT solvers</strong>, and developed methods to control <strong>Neural Network</strong> generalization via <strong>MILP</strong>. Research published in
+            <strong>ICSE</strong> and <strong>ASE</strong> with additional professional software engineering experience at <strong>Samsung R&D Institute</strong>.
           </p>
-        </div>
 
-        <div class="item" style="margin-bottom:0;">
-          <div class="orgrow">
-            <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
-            <h3 style="margin:0;">B.S. in Computer Science and Engineering</h3>
+          <div class="tags" aria-label="Research interests">
+            <span class="tag">Programming Languages</span>
+            <span class="tag">Verification</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">AI</span>
           </div>
-          <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
-          <p>GPA: 3.74/4.0 (Magna Cum Laude)</p>
         </div>
-      </div>
-    </section>
 
-    <div aria-label="Profile photo">
+        <!-- Education -->
+        <div style="margin-top:24px;">
+          <h2 id="education">Education</h2>
+          <div class="item" style="margin-bottom:16px;">
+            <div class="orgrow">
+              <img class="orglogo" src="Images/NJIT.png" alt="NJIT logo">
+              <h3 style="margin:0;">Ph.D. in Computer Science</h3>
+            </div>
+            <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
+            <p>
+              Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a><br>
+              Dissertation: Verifying and Validating Implementations of Unsupervised Learning Algorithms
+              GPA: 4.0/4.0 (PhD coursework)<br>
+            </p>
+          </div>
+          <div class="item" style="margin-bottom:0;">
+            <div class="orgrow">
+              <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
+              <h3 style="margin:0;">B.S. in Computer Science and Engineering</h3>
+            </div>
+            <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
+            <p>GPA: 3.74/4.0 (Magna Cum Laude)</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Column 2: Photo (Middle) -->
+    <div class="photo-col">
       <div class="photo">
-        <!-- Replace with your image file -->
         <img src="Images/M.png" alt="Muyeed Ahmed">
       </div>
     </div>
 
-    <div class="contacts-col">
+    <!-- Column 3: Sidebar (Contacts, Research, Skills) -->
+    <div class="sidebar-col">
       <section id="contacts" class="contacts" aria-label="Contacts">
         <h2>Contacts</h2>
-
         <div class="block">
           <strong>Email</strong>
-          <span class="value">
-            ma234@njit.edu<br>
-            akib100095@gmail.com
-          </span>
+          <span class="value">ma234@njit.edu<br>akib100095@gmail.com</span>
         </div>
-
         <div class="block">
           <strong>Location</strong>
           <span class="value">Harrison, New Jersey, USA</span>
         </div>
-
         <div class="links">
           <a href="https://github.com/MuyeedAhmed" target="_blank" rel="noreferrer">GitHub</a>
           <span>·</span>
@@ -114,10 +109,8 @@
         </div>
       </section>
 
-      <!-- Research -->
       <section id="research-highlights" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
         <h2 style="font-size:18px; margin:0 0 14px;">Research</h2>
-        
         <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-bottom:10px;">Notable Projects</h3>
         <div class="item" style="margin-bottom:16px;">
           <p style="font-size:14px; margin:0; line-height:1.5;">
@@ -152,14 +145,31 @@
             <a href="research.html" style="font-size:13px; font-weight:600;">View all research →</a>
         </div>
       </section>
+
+      <section id="skills" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
+        <h2 style="font-size:18px; margin:0 0 14px;">Expertise &amp; Skills</h2>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Languages</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Python, C++, C, Java, OCaml, SQL, JavaScript, PHP, Matlab, R</p>
+        </div>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Formal Verification & Ops</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Z3 Solver (SMT), Gurobi (MILP), Program Analysis, Formal Methods</p>
+        </div>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">AI/ML & Data</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">TensorFlow, PyTorch, Scikit-learn</p>
+        </div>
+        <div class="item" style="margin-bottom:0;">
+          <h3 style="font-size:14px;">Tools</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Git, Docker, AWS (EC2, S3), Linux/Unix Shell</p>
+        </div>
+      </section>
     </div>
 
-  </div>
-
-  <!-- Experience & Skills -->
-  <section id="experience" class="block">
-    <div class="twocol">
-      <div>
+    <!-- Experience: Spanning Col 1 & 2 -->
+    <div class="exp-col">
+      <section id="experience" class="block">
         <h2>Experience</h2>
 
         <!-- NJIT group -->
@@ -240,34 +250,10 @@
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- Skills Sidebar -->
-      <aside class="sidebar">
-        <h2 style="font-size:18px; margin:0 0 10px;">Expertise &amp; Skills</h2>
-
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">Languages</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Python, C++, C, Java, OCaml, SQL, JavaScript, PHP, Matlab, R</p>
-        </div>
-
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">Formal Verification & Ops:</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Z3 Solver (SMT), Gurobi (MILP), Program Analysis, Formal Methods</p>
-        </div>
-
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">AI/ML & Data</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">TensorFlow, PyTorch, Scikit-learn</p>
-        </div>
-
-        <div class="item" style="margin-bottom:0;">
-          <h3 style="font-size:14px;">Tools</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Git, Docker, Docker, AWS (EC2, S3), Linux/Unix Shell</p>
-        </div>
-      </aside>
+      </section>
     </div>
-  </section>
+
+  </div> <!-- end main-grid -->
 
 </main>
 </body>
