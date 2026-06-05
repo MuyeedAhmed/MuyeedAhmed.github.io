@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muyeed Ahmed · Projects</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .project-card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 40px;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .project-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    color: var(--text);
+  }
+  .project-links {
+    display: flex;
+    gap: 16px;
+  }
+  .project-tagline {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 24px;
+    font-weight: 500;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .project-section h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text);
+    margin: 0 0 12px;
+    border-bottom: 2px solid var(--line);
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+  .project-section p, .project-section ul {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin: 0;
+  }
+  .project-section ul {
+    padding-left: 20px;
+  }
+  .project-section li {
+    margin-bottom: 8px;
+  }
+  @media (max-width: 800px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="navinner">
+    <div class="brand">Muyeed Ahmed</div>
+    <nav class="menu" aria-label="Site menu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" style="color:var(--text); font-weight:600;">Projects</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <header style="margin-bottom: 60px;">
+    <h1 style="font-size: 42px; margin-bottom: 12px;">Projects</h1>
+    <p style="font-size: 20px; color: var(--muted);">Research tools and open-source implementations for Program Analysis and Machine Learning.</p>
+  </header>
+
+  <!-- Ocelot -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">Ocelot</h3>
+      <div class="project-links">
+        <a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="project-tagline">Comprehensive framework for identifying and verifying nondeterminism in Python algorithms.</p>
+    
+    <div class="project-grid">
+      <div class="project-section">
+        <h4>Technical Implementation</h4>
+        <ul>
+          <li><strong>Dynamic Analysis:</strong> AST instrumentation and object serialization (Pickle) to trace/compare variable states across runs using <a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a>.</li>
+          <li><strong>Static Taint Analysis:</strong> Integrated with Meta's <strong>Pysa</strong> to trace nondeterminism propagation from sources to outputs.</li>
+          <li><strong>SMT Encoding:</strong> Encodes algorithm logic into <strong>Z3 SMT</strong> format to check for satisfiability.</li>
+        </ul>
+      </div>
+      <div class="project-section">
+        <h4>Key Features</h4>
+        <ul>
+          <li><strong>ND Kernel Extraction:</strong> Isolates the minimal code subset responsible for propagating nondeterminism.</li>
+          <li><strong>Taint Dependency Mapping:</strong> Generates call and dependency graphs to visualize data flow.</li>
+          <li><strong>Over-approximation Filtering:</strong> Prunes variables (e.g., clustering labels) that don't affect final semantics.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- VarDeterminismChecker -->
+  <!-- <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">VarDeterminismChecker</h3>
+      <div class="project-links">
+        <a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="project-tagline">Hybrid analysis tool to identify internal variable determinism in Python library functions.</p>
+    
+    <div class="project-grid">
+      <div class="project-section">
+        <h4>Goal & Approach</h4>
+        <p>Analyze Python functions to classify internal variables as deterministic or nondeterministic by combining AST-based static analysis with dynamic execution tracing.</p>
+      </div>
+      <div class="project-section">
+        <h4>Implementation Details</h4>
+        <ul>
+          <li>Instruments source code to capture runtime variable states.</li>
+          <li>Executes functions twice and performs recursive comparison of serialized traces.</li>
+          <li>Full support for complex data types like NumPy arrays and nested dictionaries.</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+<!-- Constraint-guided-Weight-Transformations -->
+  <!-- Constraint-guided-Weight-Transformations -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">Constraint-Guided Weight Transformations</h3>
+      <div class="project-links">
+        <a href="https://github.com/Annonymous1131/ConstraintGuidedGeneralization" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="project-tagline">Steering Neural Network behavior after convergence via Mixed-Integer Linear Programming (MILP).</p>
+    
+    <div class="project-grid">
+      <div class="project-section">
+        <h4>Core Capabilities</h4>
+        <ul>
+          <li><strong>Developed CMC and TAGD:</strong> Engineered dual algorithmic frameworks to actively steer model generalization and obfuscate capabilities post-convergence.</li>
+          <li><strong>Controlled Misclassification (CMC):</strong> Nudges converged models out of overfitted, sharp loss regions by introducing minimal final-layer weight perturbations to flip targeted labels, boosting test accuracy by up to 2.8% after resuming training.</li>
+          <li><strong>Model Obfuscation (TAGD):</strong> Implements Training Accuracy-preserving Generalization Degradation to deliberately lower prediction confidence and test performance on unseen data while keeping training labels and accuracy completely intact.</li>
+        </ul>
+      </div>
+      
+      <div class="project-section">
+        <h4>Technical Architecture</h4>
+        <ul>
+          <li>Formulated and solved exact optimization constraints using the <strong>Gurobi Optimizer</strong> to compute precise weight and bias updates without initial retraining.</li>
+          <li>Surgically modifies only the <strong>final layer</strong> of the network, ensuring scalable optimization runtime independent of the overall network depth.</li>
+          <li>Evaluated and validated across diverse network architectures including <strong>ResNet18, ResNet50, WideResNet, and Network-in-Network (NIN)</strong>.</li>
+          <li>Tested performance across 10 multiclass vision benchmarks (such as CIFAR10, SVHN, MNIST, and Caltech101) and 5 binary tabular datasets.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DeAnomalyzer -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">DeAnomalyzer</h3>
+      <div class="project-links">
+        <a href="https://github.com/MuyeedAhmed/DeAnomalyzer" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="project-tagline">Black-box optimization tool to improve the determinism and consistency of Anomaly Detection implementations.</p>
+    
+    <div class="project-grid">
+      <div class="project-section">
+        <h4>Core Approach</h4>
+        <p><strong>Feedback-Directed Search:</strong> Uses a gradient descent-like approach (univariate and bivariate search) to explore a toolkit's hyperparameter space.</p>
+        <p><strong>Zero Code Modifications:</strong> Operates entirely in a black-box manner, reducing nondeterminism and inconsistency without requiring access to source code.</p>
+      </div>
+      <div class="project-section">
+        <h4>Core Capabilities</h4>
+        <ul>
+          <li><strong>Supported Toolkits:</strong> Optimizes popular algorithms across Scikit-learn, MATLAB, and R implementations.</li>
+          <li><strong>Targeted Algorithms:</strong> Handles anomaly detection algorithms, including Isolation Forest (IF), Robust Covariance (RobCov), Local Outlier Factor (LOF), and One-Class SVM (OCSVM).</li>
+          <!-- <li>Handles major algorithms: <strong>Isolation Forest</strong>, <strong>LOF</strong>, <strong>One-Class SVM</strong>, and <strong>Elliptic Envelope</strong>.</li> -->
+          <!-- <li>Bridges execution environments using Python's <code>matlabengine</code>.</li>
+          <li>Identifies and reduces implementation-specific variances across libraries like Scikit-learn vs. R base.</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACE -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3 class="project-title">ACE</h3>
+      <div class="project-links">
+        <a href="https://github.com/MuyeedAhmed/ACE" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="project-tagline">Standardized framework for accelerating and parallelizing clustering implementations.</p>
+    
+    <div class="project-grid">
+      <div class="project-section">
+        <h4>Core Goal</h4>
+        <p>Algorithm-independent acceleration through parallelization and ensemble evaluation methods.</p>
+      </div>
+      <div class="project-section">
+        <h4>Architecture</h4>
+        <ul>
+          <!-- <li>Standardized execution engine for benchmarking across custom datasets.</li> -->
+          <li>Optimized for <strong>Scikit-Learn</strong> integration.</li>
+          <li>Focuses on reducing execution time without compromising clustering quality.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
