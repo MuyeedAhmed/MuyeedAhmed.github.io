@@ -25,150 +25,62 @@
 
 <main class="wrap">
 
-  <!-- Header -->
-  <header class="top">
-    <h1>Muyeed Ahmed</h1>
-    <p>Ph.D. Candidate · Graduate Research Assistant</p>
-    <p>Computer Science · New Jersey Institute of Technology</p>
-  </header>
+  <!-- Top Section: Photo/Name (Left) & Summary/Contacts (Right) -->
+  <div class="top-section">
+    <div class="top-left">
+      <div class="photo">
+        <img src="Images/M.png" alt="Muyeed Ahmed">
+      </div>
+      <header class="intro">
+        <h1>Muyeed Ahmed</h1>
+        <p class="title">Ph.D. Candidate · Graduate Research Assistant</p>
+        <p class="subtitle">Computer Science · New Jersey Institute of Technology</p>
+        
+        <div class="contact-links">
+          <a href="mailto:ma234@njit.edu" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="https://github.com/MuyeedAhmed" target="_blank" rel="noreferrer" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/muyeed-ahmed" target="_blank" rel="noreferrer" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=YBPPO0gAAAAJ&hl=en" target="_blank" rel="noreferrer" title="Google Scholar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3.33 3 6.67 3 10 0v-5"></path></svg>
+          </a>
+        </div>
+      </header>
+    </div>
 
-  <div class="main-grid">
-    
-    <!-- Column 1: About & Education -->
-    <div class="about-edu-col">
+    <div class="top-right">
       <section id="about" aria-label="About">
         <h2>About me</h2>
         <div class="about">
           <p>
-            I'm a <strong>Ph.D. Candidate in Computer Science</strong> (Expected Aug 2026) specializing in <strong>Program Analysis</strong> and <strong>Formal
-            Verification</strong>. Developed tools to detect sources of <strong>nondeterminism</strong> and <strong>inconsistency</strong> in unsupervised learning using
-            <strong>SMT solvers</strong>, and developed methods to control <strong>Neural Network</strong> generalization via <strong>MILP</strong>. Research published in
-            <strong>ICSE</strong> and <strong>ASE</strong> with additional professional software engineering experience at <strong>Samsung R&D Institute</strong>.
+            I'm a <strong>Ph.D. Candidate in Computer Science</strong> at the <strong>New Jersey Institute of Technology (NJIT)</strong> (Expected Aug 2026), currently based in <strong>Harrison, NJ</strong>. 
+            I specialize in <strong>Program Analysis</strong> and <strong>Formal Verification</strong>, where I develop tools to detect sources of <strong>nondeterminism</strong> and <strong>inconsistency</strong> in unsupervised learning using
+            <strong>SMT solvers</strong>, and methods to control <strong>Neural Network</strong> generalization via Mixed-Integer Linear Programming <strong>(MILP)</strong>. My research has been published in
+            <strong>ICSE</strong> and <strong>ASE</strong>, and I bring additional professional software engineering experience from my time at <strong>Samsung R&D Institute</strong>.
           </p>
 
           <div class="tags" aria-label="Research interests">
-            <span class="tag">Programming Languages</span>
-            <span class="tag">Verification</span>
+            <span class="tag">Program Analysis</span>
+            <span class="tag">Formal Verification</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Optimization</span>
             <span class="tag">Machine Learning</span>
-            <span class="tag">AI</span>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div style="margin-top:24px;">
-          <h2 id="education">Education</h2>
-          <div class="item" style="margin-bottom:16px;">
-            <div class="orgrow">
-              <img class="orglogo" src="Images/NJIT.png" alt="NJIT logo">
-              <h3 style="margin:0;">Ph.D. in Computer Science</h3>
-            </div>
-            <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
-            <p>
-              Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a><br>
-              Dissertation: Verifying and Validating Implementations of Unsupervised Learning Algorithms
-              GPA: 4.0/4.0 (PhD coursework)<br>
-            </p>
-          </div>
-          <div class="item" style="margin-bottom:0;">
-            <div class="orgrow">
-              <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
-              <h3 style="margin:0;">B.S. in Computer Science and Engineering</h3>
-            </div>
-            <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
-            <p>GPA: 3.74/4.0 (Magna Cum Laude)</p>
+            <span class="tag">Artificial Intelligence</span>
           </div>
         </div>
       </section>
     </div>
+  </div>
 
-    <!-- Column 2: Photo (Middle) -->
-    <div class="photo-col">
-      <div class="photo">
-        <img src="Images/M.png" alt="Muyeed Ahmed">
-      </div>
-    </div>
-
-    <!-- Column 3: Sidebar (Contacts, Research, Skills) -->
-    <div class="sidebar-col">
-      <section id="contacts" class="contacts" aria-label="Contacts">
-        <h2>Contacts</h2>
-        <div class="block">
-          <strong>Email</strong>
-          <span class="value">ma234@njit.edu<br>akib100095@gmail.com</span>
-        </div>
-        <div class="block">
-          <strong>Location</strong>
-          <span class="value">Harrison, New Jersey, USA</span>
-        </div>
-        <div class="links">
-          <a href="https://github.com/MuyeedAhmed" target="_blank" rel="noreferrer">GitHub</a>
-          <span>·</span>
-          <a href="https://www.linkedin.com/in/muyeed-ahmed" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span>·</span>
-          <a href="https://scholar.google.com/citations?user=YBPPO0gAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-        </div>
-      </section>
-
-      <section id="research-highlights" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
-        <h2 style="font-size:18px; margin:0 0 14px;">Research</h2>
-        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-bottom:10px;">Notable Projects</h3>
-        <div class="item" style="margin-bottom:16px;">
-          <p style="font-size:14px; margin:0; line-height:1.5;">
-            <strong><a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a></strong> — Detecting nondeterminism in ML.
-          </p>
-        </div>
-        <div class="item" style="margin-bottom:16px;">
-          <p style="font-size:14px; margin:0; line-height:1.5;">
-            <strong><a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">Ocelot</a></strong> — SMT-based verification of ML implementations.
-          </p>
-        </div>
-        <div class="item" style="margin-bottom:16px;">
-          <p style="font-size:14px; margin:0; line-height:1.5;">
-            <strong><a href="https://github.com/MuyeedAhmed/Constraint-guided-Generalization" target="_blank" rel="noreferrer">Constraint-guided Generalization</a></strong> — MILP-based post-hoc NN generalization.
-          </p>
-        </div>
-
-        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-top:20px; margin-bottom:10px;">Notable Publications</h3>
-        <div class="pub-item">
-          <div class="pub-meta">ICSE'26</div>
-          <h3 class="pub-title">Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving</h3>
-        </div>
-        <div class="pub-item">
-          <div class="pub-meta">EASE'26</div>
-          <h3 class="pub-title">Can LLMs be Effective Code Contributors? A Study on Open-source Projects</h3>
-        </div>
-        <div class="pub-item">
-          <div class="pub-meta">PPAM'24</div>
-          <h3 class="pub-title">ACE: Algorithm-independent Acceleration and Parallelization of Clustering Implementations</h3>
-        </div>
-        <div class="item">
-            <a href="research.html" style="font-size:13px; font-weight:600;">View all research →</a>
-        </div>
-      </section>
-
-      <section id="skills" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
-        <h2 style="font-size:18px; margin:0 0 14px;">Expertise &amp; Skills</h2>
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">Languages</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Python, C++, C, Java, OCaml, SQL, JavaScript, PHP, Matlab, R</p>
-        </div>
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">Formal Verification & Ops</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Z3 Solver (SMT), Gurobi (MILP), Program Analysis, Formal Methods</p>
-        </div>
-        <div class="item" style="margin-bottom:14px;">
-          <h3 style="font-size:14px;">AI/ML & Data</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">TensorFlow, PyTorch, Scikit-learn</p>
-        </div>
-        <div class="item" style="margin-bottom:0;">
-          <h3 style="font-size:14px;">Tools</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Git, Docker, AWS (EC2, S3), Linux/Unix Shell</p>
-        </div>
-      </section>
-    </div>
-
-    <!-- Experience: Spanning Col 1 & 2 -->
-    <div class="exp-col">
+  <div class="main-content-grid">
+    
+    <!-- Left Column: Experience then Education -->
+    <div class="primary-col">
       <section id="experience" class="block">
         <h2>Experience</h2>
 
@@ -251,9 +163,94 @@
           </ul>
         </div>
       </section>
+
+      <!-- Education -->
+      <section id="education" class="block">
+        <h2>Education</h2>
+        <div class="item" style="margin-bottom:16px;">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/NJIT.png" alt="NJIT logo">
+            <h3 style="margin:0;">Ph.D. in Computer Science</h3>
+          </div>
+          <div class="meta">New Jersey Institute of Technology · Newark, NJ · Sep. 2020 – Present</div>
+          <p>
+            Supervisor: <a href="https://web.njit.edu/~ineamtiu/" target="_blank" rel="noreferrer">Dr. Iulian Neamtiu</a><br>
+            Dissertation: Verifying and Validating Implementations of Unsupervised Learning Algorithms
+            GPA: 4.0/4.0 (PhD coursework)<br>
+          </p>
+        </div>
+        <div class="item" style="margin-bottom:0;">
+          <div class="orgrow">
+            <img class="orglogo" src="Images/NSU.png" alt="NSU logo">
+            <h3 style="margin:0;">B.S. in Computer Science and Engineering</h3>
+          </div>
+          <div class="meta">North South University · Dhaka, Bangladesh · Jan. 2014 – Dec. 2017</div>
+          <p>GPA: 3.74/4.0 (Magna Cum Laude)</p>
+        </div>
+      </section>
     </div>
 
-  </div> <!-- end main-grid -->
+    <!-- Right Column: Research & Skills (Unchanged Content) -->
+    <div class="secondary-col">
+      <section id="research-highlights">
+        <h2>Research</h2>
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-bottom:10px;">Notable Projects</h3>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/VarDeterminismChecker" target="_blank" rel="noreferrer">VarDeterminismChecker</a></strong> — Detecting nondeterminism in ML.
+          </p>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/Ocelot" target="_blank" rel="noreferrer">Ocelot</a></strong> — SMT-based verification of ML implementations.
+          </p>
+        </div>
+        <div class="item" style="margin-bottom:16px;">
+          <p style="font-size:14px; margin:0; line-height:1.5;">
+            <strong><a href="https://github.com/MuyeedAhmed/Constraint-guided-Generalization" target="_blank" rel="noreferrer">Constraint-guided Generalization</a></strong> — MILP-based post-hoc NN generalization.
+          </p>
+        </div>
+
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.5px; color:var(--muted); margin-top:20px; margin-bottom:10px;">Notable Publications</h3>
+        <div class="pub-item">
+          <div class="pub-meta">ICSE'26</div>
+          <h3 class="pub-title">Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving</h3>
+        </div>
+        <div class="pub-item">
+          <div class="pub-meta">EASE'26</div>
+          <h3 class="pub-title">Can LLMs be Effective Code Contributors? A Study on Open-source Projects</h3>
+        </div>
+        <div class="pub-item">
+          <div class="pub-meta">PPAM'24</div>
+          <h3 class="pub-title">ACE: Algorithm-independent Acceleration and Parallelization of Clustering Implementations</h3>
+        </div>
+        <div class="item">
+            <a href="research.html" style="font-size:13px; font-weight:600;">View all research →</a>
+        </div>
+      </section>
+
+      <section id="skills" style="margin-top:28px; border-top:1px solid var(--line); padding-top:20px;">
+        <h2>Expertise &amp; Skills</h2>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Languages</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Python, C++, C, Java, OCaml, SQL, JavaScript, PHP, Matlab, R</p>
+        </div>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">Formal Verification & Ops</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Z3 Solver (SMT), Gurobi (MILP), Program Analysis, Formal Methods</p>
+        </div>
+        <div class="item" style="margin-bottom:14px;">
+          <h3 style="font-size:14px;">AI/ML & Data</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">TensorFlow, PyTorch, Scikit-learn</p>
+        </div>
+        <div class="item" style="margin-bottom:0;">
+          <h3 style="font-size:14px;">Tools</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.5;">Git, Docker, AWS (EC2, S3), Linux/Unix Shell</p>
+        </div>
+      </section>
+    </div>
+
+  </div> <!-- end main-content-grid -->
 
 </main>
 </body>
